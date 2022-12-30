@@ -53,7 +53,7 @@ places in the query::
 
     cur.execute("""
         INSERT INTO some_table (id, created_at, updated_at, last_name)
-        VALUES (%(id)s, %(created)s, %(created)s, %(name)s);
+        VALUES (%(id)s, %(created)s, %(name)s);
         """,
         {'id': 10, 'name': "O'Reilly", 'created': datetime.date(2020, 11, 18)})
 
